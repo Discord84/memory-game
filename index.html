@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images//fav.png" type="image/x-icon">
+    <title>memory</title>
+</head>
+<body>
+    <audio class="audio" autoplay loop><source src="Inan & Pandora - I Could Be the One (Ambient).mp3" type="audio/ogg"></audio>
+    <section class="main">
+        <div class="container">
+            <h1>Начать игру</h1>
+            <ul id="board-list" class="board-list">
+                <li><button onclick={music()} class="board-btn">start</button></li>
+            </ul>
+        </div>
+        <div class="container">
+            <h2 ><span id="time"> 00:00</span></h2>
+            <div id="game" class="game"></div>
+            <button id="again-btn" class="again-btn">Сыграть еще раз</button>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+<script>
+    function music(){
+        let music = document.querySelector(".audio")
+        music.play()
+    }
+</script>
+</html>

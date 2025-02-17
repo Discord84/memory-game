@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: -webkit-linear-gradient(269deg, #6a4b91,#bf69b2);
+    transition: margin 1s ease-out;
+}
+
+.board-btn {
+    background: linear-gradient(269deg, #725991,#bd68af);
+    font-size: 34px;
+    color:rgb(255, 255, 255);
+    padding: 20px 65px;
+    transition: 5s ease;
+    animation: gradients 1s infinite 3s linear;
+}
+
+h1{
+    font-size: 52px;
+    margin-bottom: 100px;
+    color: aliceblue;
+}
+
+li{
+    list-style: none;
+}
+
+@keyframes gradients {
+    0%{
+        background: linear-gradient(269deg, red,blue);
+    }
+    100%{
+        background: linear-gradient(269deg, blue,red);
+    }
+    
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 3px solid purple;
+    background: url(images/back.avif) center/cover no-repeat;
+    padding: 15px 40px;
+}
+
+.again-btn {
+    background: linear-gradient(269deg, #725991,#bd68af);
+    font-size: 34px;
+    color:rgb(255, 255, 255);
+    padding: 20px 65px;
+    transition: 5s ease;
+    animation: gradients 1s infinite 3s linear;
+    margin-top: 25px;
+    /* opacity: 0; */
+}
+
+.hide {
+    opacity: 0;
+}
+
+.again-btn.active{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.container.up{
+    margin-top: -100vh;
+}
+
+.card {
+    background: url(images/card.jpg) center/cover no-repeat;
+    height: 120px;
+    width: 75px;
+    border: 3px solid greenyellow;
+    border-radius: 15px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 10px;
+    color: transparent;
+    user-select: none;
+}
+
+.card.open {
+    background: url(images/karasik.jpg) center/cover no-repeat;
+    color: white;
+    transform: rotateY(360deg);
+    user-select: none;
+}
+
+.audio {
+    position: absolute;
+    top: 70px;
+    left: 40%;
+}
