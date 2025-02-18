@@ -121,7 +121,7 @@ function timeStop(){
     stopGame()
     timer=clearInterval(timer)
     timeEl=0
-    container.innerHTML=`<h1> время вышло</h1>`
+    container.innerHTML=`<h1 class="win"> время вышло</h1>`
 }
 
 function createCards(){
