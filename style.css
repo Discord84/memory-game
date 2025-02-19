@@ -118,4 +118,11 @@ li{
     position: absolute;
     top: 100px;
     left: 400px;
+    display: none;
+}
+
+@media(max-width: 770px){
+    .pew {
+        display: block;
+    }
 }
