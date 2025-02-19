@@ -58,7 +58,7 @@ again.addEventListener("click",(event)=>{
     event.preventDefault()
     container.innerHTML=""
     stopGame()
-    cardsCount=parseInt(10)
+    cardsCount=parseInt(8)
     timeEl=parseInt(40)
     startGame()
     console.log("1")
