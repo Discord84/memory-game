@@ -113,3 +113,9 @@ li{
     font-size: 36px;
     margin-bottom: 100px;
 }
+
+.pew {
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
