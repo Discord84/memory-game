@@ -66,7 +66,7 @@ again.addEventListener("click",(event)=>{
 
 ulu.addEventListener("click",(event)=>{
     if(event.target.classList.contains('board-btn')){
-        cardsCount=parseInt(10)
+        cardsCount=parseInt(8)
         board(cardsCount)
         screens[0].innerHTML=""
     }
